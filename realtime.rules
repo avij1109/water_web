@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "manualOpen": {
+      ".read": true,
+      ".write": true
+    },
+    "manualClose": {
+      ".read": true,
+      ".write": true
+    },
+    "waterSystem": {
+      ".read": true,
+      ".write": true,
+      "incoming": {
+        ".validate": "newData.isNumber()"
+      },
+      "outgoing": {
+        ".validate": "newData.isNumber()"
+      },
+      "valveStatus": {
+        ".validate": "newData.isString()"
+      }
+    }
+  }
+}
